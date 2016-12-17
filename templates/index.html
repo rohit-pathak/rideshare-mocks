@@ -27,6 +27,25 @@
     margin: 3px 0px;
     padding: 0px;
   }
+  .travel-info div {
+    display: inline-block;
+    margin-right: 5px;
+  }
+  .travel-info div i {
+    vertical-align: middle !important;
+  }
+  .contact {
+    width: 20%;
+    min-width: 150px;
+    max-width: 150px;
+  }
+  .travel-info {
+    min-width: 150px;
+    width: 50%;
+  }
+  .view-details a {
+    text-align: right;
+  }
 </style>
 {% endblock %}
 
@@ -51,11 +70,22 @@
   <div class="image">
     <i class="material-icons md-48">face</i>
   </div>
-  <div class="Contact">
+  <div class="contact">
     <div>John Smith</div>
     <i class="material-icons md-18">chat</i>
     <i class="material-icons md-18">phone</i>
     <i class="material-icons md-18">email</i>
+  </div>
+  <div class="travel-info">
+    <div><i class="material-icons md-18">smoke_free</i> No smoking</div>
+    <div><i class="material-icons md-18">smoke_free</i> No smoking</div>
+    <div><i class="material-icons md-18">smoke_free</i> No smoking</div>
+    <div><i class="material-icons md-18">smoke_free</i> No smoking</div>
+    <div><i class="material-icons md-18">smoke_free</i> No smoking</div>
+    <div><i class="material-icons md-18">smoke_free</i> No smoking</div>
+  </div>
+  <div class="view-details">
+    <a href="#">View details</a>
   </div>
 </div>
 {% endfor %}
