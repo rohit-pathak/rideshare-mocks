@@ -63,7 +63,7 @@
   <button type="submit" class="btn btn-primary btn-lg">Go</button>
 </form>
 
-<h4 class="page-header">Found 13 trips</h4>
+<h4 class="page-header">Found 3 trips</h4>
 {% for i in range(3) %}
 <div class="card trip">
   <h6 class="page-header">Atlanta to Tennessee, <strong>January {{i + 10}}th, 2017</strong></h6>
@@ -76,7 +76,11 @@
     <i class="material-icons md-18">phone</i>
     <i class="material-icons md-18">email</i>
   </div>
+  <div class="spaces">
+    <div><strong>{{i + 2}}</strong> seats</div>
+  </div>
   <div class="travel-info">
+    <div><i class="material-icons md-18">smoke_free</i> No smoking</div>
     <div><i class="material-icons md-18">smoke_free</i> No smoking</div>
     <div><i class="material-icons md-18">smoke_free</i> No smoking</div>
     <div><i class="material-icons md-18">smoke_free</i> No smoking</div>
@@ -85,7 +89,7 @@
     <div><i class="material-icons md-18">smoke_free</i> No smoking</div>
   </div>
   <div class="view-details">
-    <a href="#">View details</a>
+    <a href="#">View more details</a>
   </div>
 </div>
 {% endfor %}
