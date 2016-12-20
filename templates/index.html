@@ -16,12 +16,6 @@
     padding: 5px;
     margin-bottom: 10px;
   }
-  .trip > div {
-    display: inline-block;
-    margin-right: 10px;
-    padding-bottom: 0px;
-    vertical-align: top;
-  }
   .trip h6 {
     text-transform: none;
     margin: 3px 0px;
@@ -33,18 +27,6 @@
   }
   .travel-info div i {
     vertical-align: middle !important;
-  }
-  .contact {
-    width: 20%;
-    min-width: 150px;
-    max-width: 150px;
-  }
-  .travel-info {
-    min-width: 150px;
-    width: 50%;
-  }
-  .view-details a {
-    text-align: right;
   }
 </style>
 {% endblock %}
@@ -63,33 +45,39 @@
   <button type="submit" class="btn btn-primary btn-lg">Go</button>
 </form>
 
-<h4 class="page-header">Found 3 trips</h4>
+<h4 class="page-header">Found <strong>3</strong> trips</h4>
 {% for i in range(3) %}
 <div class="card trip">
   <h6 class="page-header">Atlanta to Tennessee, <strong>January {{i + 10}}th, 2017</strong></h6>
-  <div class="image">
-    <i class="material-icons md-48">face</i>
-  </div>
-  <div class="contact">
-    <div>John Smith</div>
-    <i class="material-icons md-18">chat</i>
-    <i class="material-icons md-18">phone</i>
-    <i class="material-icons md-18">email</i>
-  </div>
-  <div class="spaces">
-    <div><strong>{{i + 2}}</strong> seats</div>
-  </div>
-  <div class="travel-info">
-    <div><i class="material-icons md-18">smoke_free</i> No smoking</div>
-    <div><i class="material-icons md-18">smoke_free</i> No smoking</div>
-    <div><i class="material-icons md-18">smoke_free</i> No smoking</div>
-    <div><i class="material-icons md-18">smoke_free</i> No smoking</div>
-    <div><i class="material-icons md-18">smoke_free</i> No smoking</div>
-    <div><i class="material-icons md-18">smoke_free</i> No smoking</div>
-    <div><i class="material-icons md-18">smoke_free</i> No smoking</div>
-  </div>
-  <div class="view-details">
-    <a href="#">View more details</a>
+  <div class="row">
+    <div class="col-sm-3 contact-info">
+      <div class="row">
+        <div class="col-xs-3 image">
+          <i class="material-icons md-48">face</i>
+        </div>
+        <div class="col-xs-8 profile-details">
+          <div>John Smith</div>
+          <i class="material-icons md-18">chat</i>
+          <i class="material-icons md-18">phone</i>
+          <i class="material-icons md-18">email</i>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-1 seat-info">
+      <div><strong>{{i + 2}}</strong> seats</div>
+    </div>
+    <div class="col-sm-6 travel-info">
+      <div><i class="material-icons md-18">smoke_free</i> No smoking</div>
+      <div><i class="material-icons md-18">smoke_free</i> No smoking</div>
+      <div><i class="material-icons md-18">smoke_free</i> No smoking</div>
+      <div><i class="material-icons md-18">smoke_free</i> No smoking</div>
+      <div><i class="material-icons md-18">smoke_free</i> No smoking</div>
+      <div><i class="material-icons md-18">smoke_free</i> No smoking</div>
+      <div><i class="material-icons md-18">smoke_free</i> No smoking</div>
+    </div>
+    <div class="col-sm-2 text-right view-details">
+      <a href="#">View more details</a>
+    </div>
   </div>
 </div>
 {% endfor %}
