@@ -34,20 +34,17 @@
             <div class="collapse navbar-collapse" id="navigation-index">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="components-documentation.html" target="_blank">
-                            <i class="material-icons">event</i> Post a ride
-                        </a>
+                        <a href="/new-ride"><i class="material-icons">event</i> Post a ride</a>
                     </li>
                     <li>
-                        <a href="https://github.com/timcreative/material-kit/archive/master.zip" target="_blank">
-                            <i class="material-icons">account_box</i> Log in
-                        </a>
+                        <a href="/login"><i class="material-icons">account_box</i> Log in</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="wrapper">
+    <div class="wrapper" id="main-wrapper">
+        {% block maincontent %}
         <div class="main main-raised" id="main-content">
             <div class="section">
                 <div class="container">
@@ -56,6 +53,7 @@
                 </div>            
             </div>
         </div>
+        {% endblock %}
     </div>
 
 
